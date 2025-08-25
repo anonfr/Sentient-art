@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sentient Art Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f16" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="sentient-logo.jpeg" />
+</head>
+<body>
+  <div class="wrap">
+    <img src="sentient-logo.jpeg" alt="Sentient Logo" class="logo" />
+    <h1>Sentient Art Gallery</h1>
+    <p class="lead">Showcase your creative art for Sentient Community</p>
+    <a class="credit-inline" href="https://x.com/AnonfrXBT" target="_blank" rel="noopener">Built by @AnonfrXBT</a>
+
+    
+    <form id="uploadForm" class="controls upload" autocomplete="off">
+      <input id="uploadHandle" type="text" placeholder="@username" />
+      <input id="uploadFile" type="file" accept="image/*" />
+      <button id="uploadBtn" type="submit">Upload Art</button>
+    </form>
+
+    <div id="uploadMsg" class="msg"></div>
+
+    <div id="preview" style="display:none; margin-top:8px">
+      <img id="previewImg" alt="preview" style="max-width:220px; border-radius:10px; border:1px solid #22305d;">
+    </div>
+
+    <div id="msg" class="msg"></div>
+
+    <section id="grid" class="grid" aria-live="polite"></section>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
